@@ -1,8 +1,5 @@
-# React + Vite
+# IgniteFeed
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Primeiro projeto do curso de React Js pela Rocketseat.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto consiste em simular um feed de noticias de uma rede social, onde o principal objetivo é exercitar a criação de componentes dinâmicos. Essas criações serão feitas como post, simulando a publicação de um post do usuário em uma rede social.
