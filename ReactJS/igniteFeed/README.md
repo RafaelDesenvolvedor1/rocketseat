@@ -1,4 +1,4 @@
-# [logoDoprojeto](./assets/ignite-logo.svg) IgniteFeed
+# [logoDoprojeto](https://github.com/RafaelDesenvolvedor1/rocketseat/blob/main/ReactJS/igniteFeed/src/assets/ignite-logo.svg) IgniteFeed
 
 Primeiro projeto do curso de React Js pela Rocketseat.
 
