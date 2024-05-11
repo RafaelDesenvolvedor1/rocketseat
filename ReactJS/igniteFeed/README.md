@@ -1,4 +1,4 @@
-# IgniteFeed
+# [logoDoprojeto](./assets/ignite-logo.svg) IgniteFeed
 
 Primeiro projeto do curso de React Js pela Rocketseat.
 
