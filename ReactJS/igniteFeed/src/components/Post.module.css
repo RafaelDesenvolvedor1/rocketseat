@@ -118,14 +118,18 @@
 
 }
 
-
 .commentForm button:focus{
     box-shadow:0 0 0 2px var(--white);
 }
 
-.commentForm button:hover{
+.commentForm button[type=submit]:not(:disabled):hover{
     background:var(--green-300);
 }
+
+/* .commentForm button[type=submit]:disabled{
+    opacity:0.7;
+    cursor:not-allowed;
+} */
 
 .commentList{
     margin-top:2rem;
