@@ -10,7 +10,7 @@
     --gray-700:#0d0d0d;
 
 
-    --purple:#82b4fa;
+    --purple:#8284FA;
     --purple-dark:#5e60ce;
 
     --blue:#4ea8de;
@@ -41,4 +41,6 @@ main{
     display:flex;
     flex-direction:column;
     align-items:center;
+    width:70%;
+    margin:0 auto;
 }

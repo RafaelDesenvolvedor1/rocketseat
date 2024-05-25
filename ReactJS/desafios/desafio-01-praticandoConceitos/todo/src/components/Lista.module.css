@@ -1,0 +1,34 @@
+.lista{
+    /* background:red; */
+    width:100%;
+    margin-top:5rem;
+}
+
+.lista header{
+    display:flex;
+    justify-content:space-between;
+}
+
+.lista header strong{
+    font-size:0.875rem;
+}
+
+.lista header .tarefas{
+    color:var(--blue);
+}
+.lista header .concluidas{
+    color:var(--purple);
+}
+
+.lista header strong span{
+    background-color:var(--gray-400);
+    color:var(--gray-200);
+    padding: 0.1875rem 0.5rem;
+    border-radius:50px;
+    font-size:0.75rem;
+    margin-left:0.625rem;
+}
+
+.lista main{
+    width:100%;
+}

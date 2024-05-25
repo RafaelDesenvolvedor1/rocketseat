@@ -1,0 +1,27 @@
+.emptyList{
+    min-height:100vh;
+    width:100%;
+    padding:4rem;
+    margin-top:2rem;
+    border-top:1px solid var(--gray-400);
+    border-top-left-radius:0.5rem;
+    border-top-right-radius:0.5rem;
+}
+
+.emptyList img{
+    margin:0 auto;
+    display:block;
+
+}
+
+.emptyList p{
+    text-align:center;
+    margin-top:1rem;
+    color:var(--gray-300);
+    font-size:1rem;
+}
+
+
+.emptyList p + p{
+    margin-top:0;
+}
