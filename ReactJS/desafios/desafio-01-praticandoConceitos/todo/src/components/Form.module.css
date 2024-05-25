@@ -1,0 +1,30 @@
+.form{
+    margin-top:-1.5rem;
+    /* background:red; */
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:8px;
+
+}
+
+.form input{
+    padding:1rem;
+    width:50%;
+    background:var(--gray-500);
+    border:1px solid var(--gray-700);
+    border-radius:0.5rem;
+}
+
+.form button{
+    padding:1rem;
+    font-weight:bold;
+    font-size:0.875rem;
+    color:var(--gray-100);
+    border-radius:0.5rem;
+    border:0;
+    background:var(--blue-dark);
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
