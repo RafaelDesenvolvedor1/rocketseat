@@ -1,15 +1,17 @@
 .noteCard{
-    margin-top:1.5rem;
+    /* margin-bottom:0.75rem; */
     width:100%;
     /* height:4.5rem; */
-    background:var(--gray-500);
-    border:1px solid var(--gray-400);
+    background:var(--gray-400);
+    border:1px solid var(--gray-500);
     border-radius:.5rem;
     padding:1rem;
 
     display:flex;
     justify-content:space-between;
 }
+
+
 
 .noteCard button{
     /* display:block; */
@@ -37,6 +39,9 @@
     color:var(--gray-100);
     width:100%;
     margin:0 1rem;
+
+    transition:.2s;
+
     /* line-height:140%; */
 }
 
@@ -53,6 +58,92 @@
     color:var(--danger);
     background-color:var(--gray-400);
 }
+
+
+
+/* Card com checked*/
+
+
+
+.noteCardChecked{
+    /* margin-top:0.75rem; */
+    width:100%;
+    /* height:4.5rem; */
+    background:var(--gray-500);
+    border:1px solid var(--gray-500);
+    border-radius:.5rem;
+    padding:1rem;
+
+    display:flex;
+    justify-content:space-between;
+}
+
+
+
+.noteCardChecked button{
+    /* display:block; */
+    border:none;
+    background:transparent;
+    align-self:flex-start;
+
+    cursor:pointer;
+    transition:.2s;
+}
+
+.noteCardChecked .btnCheck{
+    padding:.5rem;
+    border:2px solid var(--purple-dark);
+    border-radius:2rem;
+    background-color:var(--purple-dark);
+    color:var(--gray-100);
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.noteCardChecked .btnCheck::before{
+    content:'\2713';
+    position:absolute;
+    font-size:0.75rem;
+}
+
+.noteCardChecked .btnCheck:hover{
+    background-color:var(--purple);
+    border:2px solid var(--purple);
+
+}
+
+.noteCardChecked span{
+    align-self:center;
+    font-size:0.875rem;
+    color:var(--gray-300);
+    width:100%;
+    margin:0 1rem;
+    text-decoration:line-through;
+    /* line-height:140%; */
+
+    transition:.2s;
+}
+
+.noteCardChecked .btnDelete{
+    color:var(--gray-300);
+    padding:.2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:4px;
+}
+
+.noteCardChecked .btnDelete:hover{
+    color:var(--danger);
+    background-color:var(--gray-400);
+}
+
+
 
 
 

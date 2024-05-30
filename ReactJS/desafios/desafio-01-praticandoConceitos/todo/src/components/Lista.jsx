@@ -12,7 +12,8 @@ export function Lista(){
             <main>
                 {/* <EmptyList/> */}
 
-                <NoteCard/>
+                <NoteCard task={'Andar de bicicleta'}/>
+                <NoteCard task={'Testar meu aplicativo'}/>
 
             </main>
         </div>
