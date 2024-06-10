@@ -3,15 +3,20 @@ import { Header } from './components/Header'
 import { Lista } from './components/Lista'
 import './global.css'
 
+import { AuthProvider } from './contexts/auth'
+
+
 function App() {
 
   return (
     <>
-      <Header/>
+      <Header />
 
       <main>
-        <Form/>
-        <Lista/>
+        <AuthProvider>
+          <Form />
+          <Lista />
+        </AuthProvider>
       </main>
     </>
   )
