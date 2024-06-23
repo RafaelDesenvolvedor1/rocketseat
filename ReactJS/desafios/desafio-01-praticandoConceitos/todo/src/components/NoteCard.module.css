@@ -63,7 +63,9 @@
 
 /* Card com checked*/
 
-
+input[type=checkbox]:checked + span{
+    color: red;
+}
 
 .noteCardChecked{
     /* margin-top:0.75rem; */
