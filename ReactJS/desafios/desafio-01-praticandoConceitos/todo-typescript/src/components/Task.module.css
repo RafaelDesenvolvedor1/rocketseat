@@ -1,0 +1,117 @@
+.task{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap:12px;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.task .btnCheckbox{
+    border-radius: 2rem;
+    background-color: transparent;
+    border: 2px solid var(--blue);
+    padding: .5rem;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.task .btnCheckbox:hover{
+    background-color: var(--blue-dark);
+    border-color: var(--blue-dark);
+
+}
+
+.task p{
+    font-size: 0.875rem;
+    color: var(--gray-100);
+    width: 100%;
+    align-self: center;
+}
+
+.task .btnDelete{
+    align-self: flex-start;
+    background-color: transparent;
+    border:0;
+    padding: 4px;
+    color: var(--gray-300);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.task .btnDelete:hover{
+    color: var(--danger);
+    background-color: var(--gray-400);
+}
+
+
+/* checked */
+
+.taskChecked{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap:12px;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-500);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* .taskChecked .btnCheckbox:hover{
+    background-color: var(--purple);
+    border-color: var(--purple);
+
+} */
+
+.taskChecked p{
+    font-size: 0.875rem;
+    color: var(--gray-300);
+    text-decoration: line-through;
+    width: 100%;
+    align-self: center;
+    
+}
+
+.taskChecked .btnDelete{
+    align-self: flex-start;
+    background-color: transparent;
+    border:0;
+    padding: 4px;
+    color: var(--gray-300);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.taskChecked .btnDelete:hover{
+    color: var(--danger);
+    background-color: var(--gray-400);
+}
+
+
+
+.taskChecked .btnCheckbox{
+    border-radius: 2rem;
+    background-color: var(--purple-dark);
+    border: 2px solid var(--purple-dark);
+    color: var(--gray-100);
+    padding: .5rem;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: .2s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskChecked .btnCheckbox::before{
+    content:'\2713';
+    position:absolute;
+    font-size:0.75rem;
+}
