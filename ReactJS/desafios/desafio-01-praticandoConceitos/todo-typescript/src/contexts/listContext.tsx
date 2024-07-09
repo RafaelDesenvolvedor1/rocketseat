@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext,  useState } from "react";
 import { TaskType } from "../components/List";
 
 export const ListContext=createContext({})
@@ -6,8 +6,20 @@ export const ListContext=createContext({})
 
 
 export function ListProvider({children}:any){
-    const [taskList, setTaskList]=useState<TaskType[]>([])
-    const [taskListCompleted, setTaskListCompleted]=useState<number>(0)
+
+    const [taskList, setTaskList]=useState<TaskType[]>(()=>{
+        const notesOnStorage=localStorage.getItem('@tasklist')
+
+        if(notesOnStorage){
+            return JSON.parse(notesOnStorage)
+        }
+        return []
+    })
+
+    const [taskListCompleted, setTaskListCompleted]=useState<number>(()=>taskList.filter((task)=>task.checked).length)
+
+
+  
 
     function addTask(text: string){
         let task = {
@@ -17,7 +29,11 @@ export function ListProvider({children}:any){
         }
       
 
-        setTaskList([...taskList, task])
+        const tasksArray=[...taskList, task]
+
+        setTaskList(tasksArray)
+
+        localStorage.setItem('@tasklist', JSON.stringify(tasksArray))
 
     }
 
@@ -27,6 +43,7 @@ export function ListProvider({children}:any){
         })
 
         setTaskList(newList)
+        localStorage.setItem('@tasklist', JSON.stringify(newList))
         changedTaskCompleted(newList)
 
  
@@ -39,6 +56,8 @@ export function ListProvider({children}:any){
         newList[saveObjectIndex].checked=newChecked
 
         setTaskList(newList)
+        localStorage.setItem('@tasklist', JSON.stringify(newList))
+
         changedTaskCompleted(newList)
 
 

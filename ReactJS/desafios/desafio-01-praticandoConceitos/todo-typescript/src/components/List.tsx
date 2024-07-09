@@ -28,7 +28,7 @@ export function List(){
             <main>
                 <ul>
                     {taskList.map((task: TaskType)=>{ 
-                        return <Task key={task.id} id={task.id} text={task.text}/>
+                        return <Task key={task.id} id={task.id} checked={task.checked} text={task.text}/>
                     })}
                 </ul>
             </main>
