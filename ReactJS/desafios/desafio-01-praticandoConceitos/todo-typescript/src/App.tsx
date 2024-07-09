@@ -1,16 +1,20 @@
 import { Form } from './components/Form'
 import { Header } from './components/Header'
 import { List } from './components/List'
+import { ListProvider } from './contexts/listContext'
 import './global.css'
 function App() {
 
   return (
     <>
-      <Header/>
+      <Header />
       <main>
-        <Form/>
-        <List/>
+        <ListProvider>
+          <Form />
+          <List />
+        </ListProvider>
       </main>
+
     </>
   )
 }
