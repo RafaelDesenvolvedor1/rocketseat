@@ -11,10 +11,11 @@ import { ListContext } from "../../contexts/listContext";
 export function Task({id, text, checked}) {
     const [checkbox, setCheckBox] = useState(checked)
 
-    const {deleteTask}=useContext(ListContext)
+    const {deleteTask, changeTaskChecked}=useContext(ListContext)
 
     function handleChecked() {
         setCheckBox(!checkbox)
+        changeTaskChecked(id, !checkbox)
     }
 
     function handleTaskDelete(){
