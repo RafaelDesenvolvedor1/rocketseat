@@ -1,4 +1,4 @@
-import react from "react";
+import React, {useState, useContext} from "react";
 import { Formulario, Input, SubmitButton, } from "./style";
 import { Text } from "react-native";
 
@@ -6,15 +6,30 @@ import { root } from "../../../palletColor";
 
 import { Feather } from '@expo/vector-icons';
 
+import { ListContext } from "../../contexts/listContext";
+
 
 export function Form(){
+    const [inputText, setInputText]=useState('')
+
+    const {addTask}= useContext(ListContext)
+
+    function handleAddTask(){
+        if(inputText.trim().length === 0){
+            return
+        }
+       addTask(inputText)
+       setInputText('')
+    }
     return(
         <Formulario>
             <Input 
                 placeholder='Adicione uma nova tarefa'
                 placeholderTextColor={root.gray300}
+                value={inputText}
+                onChangeText={(text)=>setInputText(text)}
             />
-            <SubmitButton>
+            <SubmitButton onPress={handleAddTask}>
                 {/* <Text style={{
                     fontWeight:'bold',
                     fontSize:20,

@@ -8,7 +8,7 @@ import Clipboard from '../../assets/Clipboard.svg'
 export function EmptyList(){
     return(
         <Container>
-            <Hr/>
+            {/* <Hr/> */}
             <Clipboard/>
             <Text style={styles.strong}>Você ainda não tem tarefas cadastradas</Text>
             <Text style={styles.p}>Crie tarefas e organize seus itens a fazer</Text>
