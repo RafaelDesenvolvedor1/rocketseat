@@ -1,27 +1,34 @@
 {
   "expo": {
     "name": "todo-RN",
-    "slug": "todo-RN",
+    "slug": "todo-rocketseat",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon2.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash2.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0d0d0d"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/adaptive-icon2.png",
+        "backgroundColor": "#0d0d0d"
+      },
+      "package": "com.rafaelsantos1234.todorocketseat"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon2.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "75190299-d22b-440b-9707-bba2a13576c7"
+      }
+    },
+    "owner": "rafaelsantos1234"
   }
 }

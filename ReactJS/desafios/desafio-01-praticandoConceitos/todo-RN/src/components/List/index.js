@@ -26,7 +26,7 @@ export function List() {
                     <Text style={[styles.strong, { color: `${root.blue}` }]}>Tarefas Criadas</Text>
                     <Span>
                         <Text style={styles.spanTex}>
-                            {taskList?.length}
+                            {taskList.length}
                         </Text>
                     </Span>
                 </RadioButton>
@@ -35,7 +35,7 @@ export function List() {
                 >
                     <Text style={[styles.strong, { color: `${root.purple}` }]}>Concluidas</Text>
                     <Span>
-                        <Text style={styles.spanTex}>{tarefasConcluidas} de {taskList.length}</Text>
+                        <Text style={styles.spanTex}>{tarefasConcluidas} de {taskList.length }</Text>
                     </Span>
                 </RadioButton>
             </Header>

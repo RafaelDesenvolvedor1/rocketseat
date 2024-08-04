@@ -4,26 +4,30 @@ import { root } from "../../../palletColor";
 
 
 export const TaskContainer = styled.TouchableOpacity`
-    /* justify-content: space-evenly; */
+    justify-content: space-between;
     width: 100%;
     background-color: ${root.gray500};
     border:1px solid ${root.gray400};
-    padding: 16px;
+    padding: 12px;
     border-radius: 8px;
     flex-direction: row;
     gap:9px;
     align-items: center;
+
+    position: relative;
 `
 export const TaskContainerChecked = styled.TouchableOpacity`
-    /* justify-content: space-evenly; */
+    justify-content: space-between;
     width: 100%;
     background-color: ${root.gray500};
     border:1px solid ${root.gray500};
-    padding: 16px;
+    padding: 12px;
     border-radius: 8px;
     flex-direction: row;
     gap:9px;
     align-items: center;
+
+
 `
 
 // export const CheckBox = styled.View`
